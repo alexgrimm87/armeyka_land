@@ -1,0 +1,38 @@
+<section class="section2">
+  <h2>Рассчитай <span>свой заработок</span></h2>
+  <div class="profit-wrap">
+    <form action="ajax.php" method="post">
+      <div class="inputs-wrap">
+        <div class="form-field">
+          <label for="average-check">Средний чек:</label>
+          <input id="average-check" type="text" name="average_check" value="90000" required />
+        </div>
+        <div class="form-field">
+          <div class="label-wrap">
+            <label for="transactions">Кол-во сделок (в мес.):</label>
+            <span>* 12 - среднее количество сделок у филиала</span>
+          </div>
+          <input id="transactions" type="text" name="transactions" value="12" required />
+        </div>
+        <div class="form-field">
+          <label for="revenue">Ваша выручка (в мес.):</label>
+          <input id="revenue" type="text" name="revenue" value="1 080 000" disabled />
+        </div>
+        <div class="form-field">
+          <label for="profitability">Рентабельность:</label>
+          <input id="profitability" type="text" name="profitability" value="50%" disabled />
+        </div>
+        <div class="form-field">
+          <label for="net-profit-month">Ваша чистая прибыль (в мес.):</label>
+          <input id="net-profit-month" type="text" name="net_profit_month" value="540 000" disabled />
+        </div>
+      </div>
+    </form>
+    <div class="statistics">
+      <p>Чистая прибыль: <b id="net-profit">6 480 000</b> рублей в год</p>
+      <span>** даже при 5 сделках в месяц,
+      <br>Вы будете зарабатывать: 2 700 000 рублей в год</span>
+    </div>
+    <span class="statistics-title">статистика</span>
+  </div>
+</section>

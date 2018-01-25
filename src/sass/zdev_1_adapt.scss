@@ -1,0 +1,38 @@
+@media screen and (max-width: 1368px){
+  .section1 {
+    .business-wrap {
+      video {
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1250px){
+  .section2 {
+    .profit-wrap {
+      .statistics-title {
+        left: -150px;
+        font-size: 160px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1023px){
+  .section2 {
+    .profit-wrap {
+      .statistics-title {
+        left: -20px;
+        font-size: 120px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 840px){
+  .header {
+    .header-wrap {
+      nav {
+        max-width: 290px;
+      }
+    }
+  }
+}

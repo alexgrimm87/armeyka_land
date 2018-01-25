@@ -1,0 +1,499 @@
+.town-change {
+  width: 100%;
+  max-width: 234px;
+  margin: 0 auto;
+  border: 2px solid #dd2734;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  padding: 10px 0px 12px 17px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  color: white;
+  font-size: 16px;
+  position: relative;
+  letter-spacing: 0.5px;
+  -webkit-transition: all ease .2s;
+  -o-transition: all ease .2s;
+  -moz-transition: all ease .2s;
+  transition: all ease .2s; }
+  .town-change:hover {
+    background-color: #dd2734; }
+  .town-change:after {
+    content: '';
+    height: 41px;
+    width: 41px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #dd2734;
+    position: absolute;
+    top: -1px;
+    right: -1px; }
+  .town-change:before {
+    position: absolute;
+    z-index: 2;
+    border-top: 7px solid white;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    position: absolute;
+    content: '';
+    right: 13px;
+    top: 17px; }
+
+.calculator_ocup {
+  background: #121b2d url("../images/section9.jpg") center center no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  color: white;
+  text-align: center; }
+  .calculator_ocup p {
+    margin: 0; }
+  .calculator_ocup i {
+    font-size: 16px; }
+  .calculator_ocup .calculator_ocup-wrap {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    max-width: 750px;
+    margin: 0 auto; }
+    .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_wrap {
+      position: relative; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_wrap:after {
+        position: absolute;
+        content: '';
+        width: 754px;
+        height: 507px;
+        background: transparent url("../images/calculator_ocup_form_wrap.png") center center no-repeat;
+        top: -62px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        transform: translateX(-50%);
+        pointer-events: none; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_wrap .calculator_ocup_form {
+        position: relative;
+        z-index: 3; }
+    .calculator_ocup .calculator_ocup-wrap .calculator_ocup_title {
+      color: #dd2734;
+      padding-top: 58px;
+      margin: 0 auto;
+      padding-bottom: 34px;
+      max-width: 740px;
+      font-family: 'DINPro'; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_title h2, .calculator_ocup .calculator_ocup-wrap .calculator_ocup_title h3 {
+        font-size: 46px;
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 1px;
+        line-height: 1.2; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_title b {
+        display: block; }
+    .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_top {
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+      margin-bottom: 24px; }
+    .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom {
+      padding-bottom: 121px; }
+    .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table {
+      font-size: 16px;
+      max-width: 555px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 39px;
+      letter-spacing: 1px; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 17px; }
+        .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table .row .item {
+          text-align: left;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table .row .item:first-child {
+            width: -webkit-calc(100% - 164px);
+            width: -moz-calc(100% - 164px);
+            width: calc(100% - 164px); }
+          .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table .row .item:last-child {
+            width: 164px;
+            -webkit-box-pack: end;
+            -webkit-justify-content: flex-end;
+            -moz-box-pack: end;
+            -ms-flex-pack: end;
+            justify-content: flex-end; }
+        .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table .row .item-wrap {
+          height: 40px;
+          min-width: 100px;
+          background-color: #07203f;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -moz-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -moz-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          margin-right: 10px;
+          padding: 0 5px; }
+          .calculator_ocup .calculator_ocup-wrap .calculator_ocup_form_bottom_table .row .item-wrap.widthoutbg {
+            background-color: transparent; }
+    .calculator_ocup .calculator_ocup-wrap .calculator_ocup_bottom_text {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_bottom_text b {
+        font-size: 30px;
+        color: #dd2734;
+        padding: 17px 0px 17px; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_bottom_text i {
+        margin-bottom: 45px;
+        font-weight: 300; }
+      .calculator_ocup .calculator_ocup-wrap .calculator_ocup_bottom_text .calculator_ocup_summa_all {
+        font-size: 30px;
+        display: inline-block; }
+
+.select {
+  width: 100px;
+  height: 40px; }
+  .select .jq-selectbox__select {
+    height: 40px;
+    border: 1px solid #dd2734;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 35px 0 10px; }
+  .select .jq-selectbox__trigger {
+    border-left: none; }
+    .select .jq-selectbox__trigger:after {
+      position: absolute;
+      height: 80%;
+      border-left: 1px solid #dd2734;
+      content: '';
+      top: 10%; }
+  .select .jq-selectbox__select-text {
+    text-align: center;
+    width: 100% !important;
+    padding-right: 10px; }
+  .select .jq-selectbox__trigger-arrow {
+    border-top: 5px solid #fff;
+    top: 16px; }
+
+.check_invest_to_start {
+  background: transparent url("../images/check_invest_to_start.jpg") center center no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  text-align: center; }
+  .check_invest_to_start .check_invest_to_start_wrap {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 670px;
+    padding: 0  10px; }
+  .check_invest_to_start .check_invest_to_start_top {
+    margin-bottom: 33px; }
+    .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title {
+      padding-top: 57px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      padding-bottom: 43px; }
+      .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title h2, .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title h3 {
+        font-family: 'DINPro';
+        font-size: 46px;
+        text-transform: uppercase;
+        margin: 0; }
+    .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title_bottom {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      color: #151515;
+      padding-bottom: 17px; }
+      .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title_bottom .town-change {
+        margin: 0;
+        color: #151515; }
+        .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title_bottom .town-change:hover {
+          color: white; }
+      .check_invest_to_start .check_invest_to_start_top .check_invest_to_start_title_bottom span {
+        font-size: 20px;
+        margin: 0 24px; }
+  .check_invest_to_start .check_invest_to_start_bottom .el-button {
+    margin: 0 auto; }
+    .check_invest_to_start .check_invest_to_start_bottom .el-button:hover {
+      opacity: 1;
+      background: white;
+      color: #dd2734; }
+  .check_invest_to_start .check_invest_to_start_bottom .check_invest_to_start_bottom_title {
+    color: #151515;
+    font-size: 26px;
+    font-family: 'DINPro';
+    font-weight: bold;
+    margin-bottom: 7px; }
+    .check_invest_to_start .check_invest_to_start_bottom .check_invest_to_start_bottom_title span {
+      color: #dd2734;
+      font-size: 37px; }
+  .check_invest_to_start .check_invest_to_start_bottom .check_invest_to_start_button {
+    padding-top: 26px;
+    padding-bottom: 70px; }
+  .check_invest_to_start .check_invest_to_start_grey {
+    font-size: 16px;
+    color: #909295; }
+
+.section5 {
+  background: transparent url("../images/section5.jpg") center center no-repeat;
+  -moz-background-size: cover;
+  background-size: cover; }
+  .section5 .mbox {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 10px;
+    margin: 0 auto; }
+  .section5 p {
+    margin: 0; }
+  .section5 .army-help {
+    height: 562px; }
+  .section5 .army-help-top {
+    text-align: center;
+    font-size: 46px;
+    text-transform: uppercase;
+    padding-top: 46px;
+    letter-spacing: 0.5px;
+    line-height: 1.2; }
+  .section5 .army-help-slider {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 90px; }
+    .section5 .army-help-slider .slider {
+      padding: 0 40px; }
+      .section5 .army-help-slider .slider .item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .section5 .army-help-slider .slider .item .title {
+          max-width: 500px;
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #dd2734;
+          font-family: 'DINPro';
+          font-weight: bold;
+          margin-bottom: 27px; }
+        .section5 .army-help-slider .slider .item ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          max-width: 500px;
+          font-family: 'DINPro';
+          font-size: 16px;
+          line-height: 1.5;
+          padding-left: 10px;
+          font-weight: bold; }
+          .section5 .army-help-slider .slider .item ul li {
+            position: relative; }
+            .section5 .army-help-slider .slider .item ul li:after {
+              position: absolute;
+              width: 4px;
+              height: 4px;
+              background-color: #dd2734;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              border-radius: 50%;
+              content: '';
+              left: -10px;
+              top: 10px; }
+  .section5 .slick-prev, .section5 .slick-next {
+    height: 60px;
+    width: 60px;
+    border: 2px solid #dd2734;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    -moz-transition: all ease .2s;
+    transition: all ease .2s; }
+    .section5 .slick-prev:hover, .section5 .slick-next:hover {
+      background-color: rgba(221, 39, 52, 0.09); }
+    .section5 .slick-prev:before, .section5 .slick-next:before {
+      content: '';
+      width: 25px;
+      height: 25px;
+      background: transparent url("../images/section5-arrow.png") center center no-repeat;
+      opacity: 1;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+  @media screen and (max-width: 1024px) {
+    .section5 .slick-prev {
+      left: 0px; }
+    .section5 .slick-next {
+      right: 0px; } }
+  .section5 .slick-next:before {
+    -webkit-transform: translate(-50%, -50%) rotate(-180deg);
+    -moz-transform: translate(-50%, -50%) rotate(-180deg);
+    -ms-transform: translate(-50%, -50%) rotate(-180deg);
+    -o-transform: translate(-50%, -50%) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(-180deg); }
+
+.select-town-pop {
+  position: relative;
+  margin: 0 auto;
+  width: 1300px;
+  padding: 20px 30px 30px;
+  font-family: 'DINPro';
+  font-weight: bold; }
+  .select-town-pop p {
+    margin: 5px 0px 10px 0;
+    padding: 0;
+    font-size: 16px; }
+  .select-town-pop a {
+    color: #dd2734;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-right: 10px; }
+  .select-town-pop .city_column_all {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .select-town-pop .city_column_all .city_column {
+      width: -webkit-calc(100% / 6);
+      width: -moz-calc(100% / 6);
+      width: calc(100% / 6);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+  .select-town-pop .popup_new_h2 {
+    margin: 20px 0 20px;
+    font-size: 26px; }
+  .select-town-pop .easy-autocomplete {
+    width: 100%;
+    max-width: 300px; }
+    .select-town-pop .easy-autocomplete input {
+      width: 100%; }
+      .select-town-pop .easy-autocomplete input::-webkit-input-placeholder {
+        color: #ccc;
+        font-weight: 300; }
+      .select-town-pop .easy-autocomplete input:-moz-placeholder {
+        color: #ccc;
+        opacity: 1;
+        font-weight: 300; }
+      .select-town-pop .easy-autocomplete input::-moz-placeholder {
+        color: #ccc;
+        opacity: 1;
+        font-weight: 300; }
+      .select-town-pop .easy-autocomplete input:-ms-input-placeholder {
+        color: #ccc;
+        font-weight: 300; }
+    .select-town-pop .easy-autocomplete .city-item {
+      margin-bottom: 0;
+      padding: 7px 0 7px;
+      font-size: 16px; }
+  .select-town-pop .select-town-search {
+    position: relative; }
+    .select-town-pop .select-town-search .text-on-noresults {
+      position: absolute;
+      max-width: 50%;
+      top: -webkit-calc(100% + 1px);
+      top: -moz-calc(100% + 1px);
+      top: calc(100% + 1px);
+      left: 0;
+      background: none repeat scroll 0 0 #ffffff;
+      border: 1px solid #ccc;
+      padding: 5px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      display: none; }
+      .select-town-pop .select-town-search .text-on-noresults.active {
+        display: block; }
+      .select-town-pop .select-town-search .text-on-noresults p {
+        margin: 0; }

@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Армейка Net</title>
+
+<!--     <meta id="viewport" name="viewport" content="width=1024,user-scalable=yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="MobileOptimized" content="1024"/>
+<meta name="HandheldFriendly" content="false"/>
+
+<meta name="format-detection" content="telephone=no"> -->
+    <meta name="viewport" content="width=768px, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <!-- build:css -->
+
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/formstyler.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/easy-autocomplete.css">
+    <!-- add new file here -->
+
+    <link rel="stylesheet" href="css/zdev_0_basic.css">
+    <link rel="stylesheet" href="css/zdev_1.css">
+    <link rel="stylesheet" href="css/zdev_1_adapt.css">
+    <link rel="stylesheet" href="css/zdev_4.css">
+    <link rel="stylesheet" href="css/zdev_4_adapt.css">
+    <!-- endbuild -->
+
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />
+    <script type="text/javascript" src="https://rawgit.com/codefucker/finalReject/master/reject/reject.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div class="global-wrapper">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="mbox_header">
+        <div class="header-wrap">
+          <a class="logo" href="index.html"><img src="images/logo.png" alt="logo"></a>
+          <nav>
+            <ul>
+              <li><a href="#lists">Услуга</a></li>
+              <li><a href="#video-scheme">Видео</a></li>
+              <li><a href="#questions">Отзывы</a></li>
+              <li><a href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="header-right">
+            <div class="phone-wrap">
+              <div class="phone-pic">
+                <img src="images/phone-icon.png" alt="phone">
+              </div>
+              <a href="tel:88007753589">8 800 <span>775-35-89</span></a>
+            </div>
+            <div class="geolocation">
+              <a id="user-city" href="#select-town-pop" class="town-change-popup">Новосибирск</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+        <dir id="preload">
+            <img src="images/ajax-loader.gif" alt="">
+        </dir>
+        <section class="section1">
+        <!-- <dir id="preload">
+          <img src="images/ajax-loader.gif" alt="">
+        </dir> -->
+        <div class="overlay"></div>
+          <div class="business-wrap">
+            <video id="video_bg" src="video/video.mp4" autoplay="true" loop=""></video>
+            <div class="business-wrap-inner">
+              <h1>Начни зарабатывать</h1>
+              <div class="title-bottom">
+                <p>от <span>6 000 000</span> рублей в год *</p>
+                <div class="star-icon">
+                  <img src="images/star-icon.png" alt="star">
+                </div>
+              </div>
+              <div class="business-bottom">
+                <span>*средний заработок филиала </span>
+                <a class="business-link el-button" href="#business-popup">Получить бизнес-план</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section2">
+          <h2>Рассчитай <span>свой заработок</span></h2>
+          <div class="profit-wrap">
+            <form action="ajax.php" method="post">
+              <div class="inputs-wrap">
+                <div class="form-field">
+                  <label for="average-check">Средний чек:</label>
+                  <input id="average-check" type="text" name="average_check" value="90000" required />
+                </div>
+                <div class="form-field">
+                  <div class="label-wrap">
+                    <label for="transactions">Кол-во сделок (в мес.):</label>
+                    <span>* 12 - среднее количество сделок у филиала</span>
+                  </div>
+                  <input id="transactions" type="text" name="transactions" value="12" required />
+                </div>
+                <div class="form-field">
+                  <label for="revenue">Ваша выручка (в мес.):</label>
+                  <input id="revenue" type="text" name="revenue" value="1 080 000" disabled />
+                </div>
+                <div class="form-field">
+                  <label for="profitability">Рентабельность:</label>
+                  <input id="profitability" type="text" name="profitability" value="50%" disabled />
+                </div>
+                <div class="form-field">
+                  <label for="net-profit-month">Ваша чистая прибыль (в мес.):</label>
+                  <input id="net-profit-month" type="text" name="net_profit_month" value="540 000" disabled />
+                </div>
+              </div>
+            </form>
+            <div class="statistics">
+              <p>Чистая прибыль: <b id="net-profit">6 480 000</b> рублей в год</p>
+              <span>** даже при 5 сделках в месяц,
+              <br>Вы будете зарабатывать: 2 700 000 рублей в год</span>
+            </div>
+            <span class="statistics-title">статистика</span>
+          </div>
+        </section>
+        <section class="section3">
+          <h2>Помогать призывникам — <span>очень выгодно</span></h2>
+          <div class="helping-subtitle">
+            <h3>Очень низкая конкуренция:</h3>
+            <p>Для сравнения доли рынка: <span>г. Новосибирск (миллионник)</span></p>
+          </div>
+          <div class="pie-chart">
+            <div class="chart-item">
+              <div class="pie"></div>
+              <div class="chart-info">
+                <span>5</span>
+                <p>Компаний помощи призывникам</p>
+              </div>
+            </div>
+            <div class="chart-item">
+              <div class="pie"></div>
+              <div class="chart-info">
+                <span>850</span>
+                <p>Агентства недвижимости</p>
+              </div>
+            </div>
+            <div class="chart-item">
+              <div class="pie"></div>
+              <div class="chart-info">
+                <span>1547</span>
+                <p>Юридические компании</p>
+              </div>
+            </div>
+          </div>
+          <div class="helping-subtitle-bottom">
+            <span>Фактически – рынок свободен!</span>
+            <span>... и так по всей России!</span>
+          </div>
+          <div class="helping-survey">
+            <div class="survey-pie-wrap">
+              <div class="survey-pie">
+                <span>64%</span>
+              </div>
+            </div>
+            <div class="survey-info">
+              <h4>64% граждан не хотят, чтобы их сыновья (родственники) служили в армии</h4>
+              <p>Согласно проведенному опросу ВЦИОМ от 2010 года: </p>
+              <ul>
+                <li>50% опрошенных не хотят, чтобы их сыновья и братья служили в армии; </li>
+                <li>14% опрошенных – воздержались от ответа</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="section4">
+          <div class="volume-market">
+            <h2>Объём рынка</h2>
+            <form action="ajax.php" method="post">
+              <div class="city-wrap">
+                <span>Город:</span>
+                <a href="#select-town-pop" class="town-change town-change-popup">Новосибирск</a>
+              </div>
+              <div class="volume-market-top">
+                <div class="market-top-item">
+                  <span id="recruitsCity">107 400</span>
+                  <p>призывников в вашем городе</p>
+                </div>
+                <div class="market-top-item">
+                  <span id="recruitsDeferred">41 390</span>
+                  <p>пользующихся отсрочкой</p>
+                </div>
+                <div class="market-top-item">
+                  <span id="recruitsNine">29 642</span>
+                  <p>план по призыву за 9 лет</p>
+                </div>
+              </div>
+              <div class="market-note market-top-note">
+                <p>* План по призыву за 9 лет – в сумме составляет лишь 26,6% от общего количества призывников.</p>
+                <p>При этом - оставшиеся 73,4% призывников - боятся оказаться в списке призванных.</p>
+              </div>
+              <div class="volume-market-bottom">
+                <div class="market-bottom-item">
+                  <div class="volume-pic">
+                    <img src="images/money-icon.png" alt="money">
+                  </div>
+                  <b><span id="potentialSize">7,293</span> млрд</b>
+                  <i>рублей</i>
+                  <p>потенциальный объём рынка в вашем городе (TAM)</p>
+                </div>
+                <div class="market-bottom-item">
+                  <div class="volume-pic">
+                    <img src="images/money-icon.png" alt="money">
+                  </div>
+                  <b><span id="realSize">5,313</span> млрд</b>
+                  <i>рублей</i>
+                  <p>реальный объем рынка в вашем городе (SAM)</p>
+                </div>
+                <div class="market-bottom-item">
+                  <div class="volume-pic">
+                    <img src="images/money-icon.png" alt="money">
+                  </div>
+                  <b><span id="marketShare">106</span> млн</b>
+                  <i>рублей</i>
+                  <p>доля рынка 2% (SOM):</p>
+                </div>
+              </div>
+              <div class="market-note market-bottom-note">
+                <p>** Даже при занятии доли рынка всего в 5% – Вы заработаете 3 000 000 рублей</p>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="section5">
+            <div class="mbox">
+                <div class="army-help">
+        
+                    <div class="army-help-top">
+                        <p>Сфера помощи призывникам —</p>
+                        <p>
+                            <b>социально и экономически полезна!</b>
+                        </p>
+                    </div>
+        
+                    <div class="army-help-slider">
+        
+                        <div class="slider">
+        
+                            <div class="item">
+        
+                                <div class="title">Экономическая польза для призывника</div>
+        
+                                <ul>
+                                    <li>
+                                        <p>за год призывник (в среднем) заработает 396 000 руб.;</p>
+                                    </li>
+                                    <li>
+                                        <p>за год квалификация призывника как специалиста вырастит и сможет зарабатывать больше;</p>
+                                        <p>(это важные шаги в благополучное будущее)</p>
+                                    </li>
+                                </ul>
+        
+                            </div>
+        
+                            <div class="item">
+        
+                                <div class="title">Экономическая польза для призывника1</div>
+        
+                                <ul>
+                                    <li>
+                                        <p>за год призывник (в среднем) заработает 396 000 руб.;</p>
+                                    </li>
+                                    <li>
+                                        <p>за год квалификация призывника как специалиста вырастит и сможет зарабатывать больше;</p>
+                                        <p>(это важные шаги в благополучное будущее)</p>
+                                    </li>
+                                </ul>
+        
+                            </div>
+        
+                            <div class="item">
+        
+                                <div class="title">Экономическая польза для призывника2</div>
+        
+                                <ul>
+                                    <li>
+                                        <p>за год призывник (в среднем) заработает 396 000 руб.;</p>
+                                    </li>
+                                    <li>
+                                        <p>за год квалификация призывника как специалиста вырастит и сможет зарабатывать больше;</p>
+                                        <p>(это важные шаги в благополучное будущее)</p>
+                                    </li>
+                                </ul>
+        
+                            </div>
+        
+                            <div class="item">
+        
+                                <div class="title">Экономическая польза для призывника3</div>
+        
+                                <ul>
+                                    <li>
+                                        <p>за год призывник (в среднем) заработает 396 000 руб.;</p>
+                                    </li>
+                                    <li>
+                                        <p>за год квалификация призывника как специалиста вырастит и сможет зарабатывать больше;</p>
+                                        <p>(это важные шаги в благополучное будущее)</p>
+                                    </li>
+                                </ul>
+        
+                            </div>
+        
+                            <div class="item">
+        
+                                <div class="title">Экономическая польза для призывника4</div>
+        
+                                <ul>
+                                    <li>
+                                        <p>за год призывник (в среднем) заработает 396 000 руб.;</p>
+                                    </li>
+                                    <li>
+                                        <p>за год квалификация призывника как специалиста вырастит и сможет зарабатывать больше;</p>
+                                        <p>(это важные шаги в благополучное будущее)</p>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+        <section id="lists" class="section6">
+          <div class="lists-wrap">
+            <div class="list-wrap list-left">
+              <h3>Что входит во франшизу</h3>
+              <ul>
+                <li><b>Наработана схема помощи призывникам</b> (база знаний);</li>
+                <li><b>Курировать клиентов будут наши юристы и врачи</b> (через личный кабинет); </li>
+                <li><b>Известный в России брэнд</b> в сфере помощи призывникам; </li>
+                <li><b>Разработан удобный личный кабинет</b> для клиентов и франчайзи; </li>
+                <li><b>Настройка всех рекламных кампаний</b> (с проверенной эффективностью); </li>
+                <li><b>Размещение на сайте <a href="http://www.armeyka.net" target="_blank">armeyka.net</a></b> – контактов офиса (посещаемость сайта более 180 000 уников в месяц); </li>
+              </ul>
+            </div>
+            <div class="list-wrap list-right">
+              <h3>Наши преимущества</h3>
+              <ul>
+                <li><b>Весь паушальный взнос – инвестируется в развитие франчайзи</b> (на расчетный счет компании франчайзи);</li>
+                <li><b>Вам не потребуется нанимать юриста и врача</b> (платить им оклад, арендовывать лишние квадратные метры и следить за их компетенцией); </li>
+                <li><b>Всё курирование и консультирование клиентов</b> франчайзи осуществляется юристами и врачами головного офиса – через личный кабинет – это очень удобно;</li>
+                <li><b>Вы сможете целиком сконцентрироваться на продажах и поиске клиентов</b>, а сопровождать будут юристы и врачи головного офиса;</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="video-scheme" class="section7">
+        	<div class="video-scheme-wrap mbox">
+        		<h2>Схема оказания <span>услуги призывнику</span></h2>
+        		<div class="video-scheme">
+        			<iframe id="video" width="650" height="372" src="https://www.youtube.com/embed/814ZEXbeKIU?&showinfo=0" frameborder="0" allowfullscreen></iframe>
+        			<div class="video-overlay"></div>
+        		</div>
+        	</div>
+        </section>
+        <section class="section8 check_invest_to_start">
+            <div class="check_invest_to_start_wrap">
+                <div class="check_invest_to_start_top">
+                    <div class="check_invest_to_start_title">
+                        <h2>Рассчитать инвестиции<br>для запуска</h2>
+                    </div>
+                    <div class="check_invest_to_start_title_bottom">
+                        <span>Выберите город:</span>
+                        <a href="#select-town-pop" class="town-change town-change-popup">Новосибирск</a>
+                    </div>
+                    <div class="check_invest_to_start_grey">
+                        <i>* значения приблизительные</i>
+                    </div>
+                </div>
+                <div class="check_invest_to_start_bottom">
+                    <div class="check_invest_to_start_bottom_title">
+                        Итоговая сумма для запуска: <span>0</span> рублей
+                    </div>
+                    <div class="check_invest_to_start_grey">
+                        <span>* логика расчета итоговой суммы = разовые расходы плюс расходы на 3 месяца</span>
+                    </div>
+                    <div class="check_invest_to_start_button">
+                        <a href="#business-popup" class="business-link el-button"><span>Получить бизнес-план</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section9 calculator_ocup">
+            <div class="calculator_ocup-wrap">
+                <div class="calculator_ocup_title">
+                    <h2>Калькулятор окупаемости <b>инвестиций</b> </h2>
+                </div>
+        
+                <div class="calculator_ocup_form_wrap">
+                    <form action="ajax.php" class="calculator_ocup_form">
+                        <div class="calculator_ocup_form_top">
+                            <div class="calculator_ocup_form_top_name">
+                                <p>Выберите город, в котором хотите открыть офис</p>
+                                <i>(сумма зависит от города)</i>
+                            </div>
+                        </div>
+                        <div class="calculator_ocup_form_bottom">
+                            <a href="#select-town-pop" class="town-change town-change-popup">Новосибирск</a>
+                            <div class="calculator_ocup_form_bottom_table">
+                                <div class="row">
+                                    <div class="item">Требуется инвестиций для запуска бизнеса: </div>
+                                    <div class="item">
+                                        <div class="item-wrap">
+                                            <span id="calculator_ocup_invest_zapusk" data-number="750000">750 000</span>
+                                        </div>
+                                        <span>руб.</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item">Количество договоров (в мес): от 1 до 40; </div>
+                                    <div class="item">
+                                        <div class="item-wrap widthoutbg">
+                                            <select name="" id="calculator_ocup_col_dogovorov" class="calculator_ocup_col_dogovorov select">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                                <option value="7">7</option>
+                                                <option value="8">8</option>
+                                                <option value="9">9</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12" selected >12</option>
+                                                <option value="13">13</option>
+                                                <option value="14">14</option>
+                                                <option value="15">15</option>
+                                                <option value="16">16</option>
+                                                <option value="17">17</option>
+                                                <option value="18">18</option>
+                                                <option value="19">19</option>
+                                                <option value="20">20</option>
+                                            </select>
+                                        </div>
+                                        <span>руб.</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item">Выручка (в мес):</div>
+                                    <div class="item">
+                                        <div class="item-wrap">
+                                            <span id="calculator_ocup_viruchka" class="calculator_ocup_viruchka" data-number="250000">250 000</span>
+                                        </div>
+                                        <span>руб.</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="item">Рентабельность 50% </div>
+                                    <div class="item"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+        
+                <div class="calculator_ocup_bottom_text">
+                    <p>Возврат инвестиций</p>
+                    <b>за <span class="calculator_ocup_summa_all" id="calculator_ocup_summa_all">0</span> <span class="calculator_ocup_summa_all_word">месяцев</span></b>
+                    <i>сумма инвестиций делить на прибыль в месяц</i>
+                </div>
+        
+        
+            </div>
+        </section>
+        <section id="questions" class="section10">
+          <div class="questions-request">
+            <h2>ОСТАЛИСЬ ВОПРОСЫ?</h2>
+            <p>Оставьте заявку и с Вами свяжется основатель проекта</p>
+            <form class="request-form" action="ajax-programer.php" method="post">
+              <div class="form-field">
+                <input type="text" name="name" placeholder="ИМЯ" required />
+              </div>
+              <div class="form-field">
+                <input type="tel" name="tel" placeholder="телефон" required />
+              </div>
+              <button class="el-button" type="submit">задать вопрос</button>
+            </form>
+          </div>
+        </section>
+    </div>
+    <!-- /MAIN -->
+
+    <div class="hidden-block">
+    
+        <div id="call_success">
+            <div class="call-success">
+                <div class="call_success">
+                    <div class="call-title">Спасибо за заявку!</div>
+                    <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="call-popup">
+            <form action="ajax.php" name="" class="contact-form">
+                <div class="contact-form-title">
+                    <h5>Lorem ipsum dolor.</h5>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_name" required="required" value=""
+                                       placeholder="Ваше Имя">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-item">
+                        <div class="contact-form-item-input form_row">
+                            <div class="form_input">
+                                <input type="text" name="contact_tel" value="" required="required"
+                                       placeholder="Ваш номер" class="tel-mask">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-row cfix">
+                    <div class="contact-form-item">
+                        <button type="submit" class="contact-submit">
+                            <span>Отправить заявку</span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    
+        <div id="select-town-pop" class="select-town-pop">
+            <div class="content">
+    
+                <h2 class="popup_new_h2">Укажите ваш город</h2>
+    
+                <div class="select-town-search">
+                    <input id="searchInput" class="type-search" type="text">
+    
+                    <div class="text-on-noresults">
+                        <p>Расчеты в бизнес-плане для вашего города делаются отдельно. Просьба связаться с нами и уточнить детали. Тел.: 8-800-775-35-89.
+                        </p>
+                    </div>
+                </div>
+    
+    
+                <h2 class="popup_new_h2">Есть офис</h2>
+    
+                <div class="e-city_prime_list">
+                    <a href="#" data-id="1" class="city-item city-prime">Москва</a>
+                    <a href="#" data-id="3" class="city-item city-prime">Новосибирск</a>
+                    <a href="#" data-id="4" class="city-item city-prime">Екатеринбург</a>
+                </div>
+    
+                <h2 class="popup_new_h2">Доступно дистанционное обслуживание</h2>
+    
+    
+                <div class="city_column_all">
+                    <div class="city_column">
+                        <a href="#" data-id="2" class="city-item city-milli">Санкт-Петербург</a> <a
+                            href="#" data-id="5" class="city-item city-milli">Нижний Новгород</a> <a
+                            href="#" data-id="6" class="city-item city-milli">Казань</a> <a
+                            href="#" data-id="7" class="city-item city-milli">Челябинск</a> <a
+                            href="#" data-id="8" class="city-item city-milli">Омск</a> <a
+                            href="#" data-id="9" class="city-item city-milli">Самара</a> <a
+                            href="#" data-id="10" class="city-item city-milli">Ростов-на-Дону</a> <a
+                            href="#" data-id="11" class="city-item city-milli">Уфа</a> <a
+                            href="#" data-id="12" class="city-item city-milli">Красноярск</a> <a
+                            href="#" data-id="13" class="city-item city-milli">Пермь</a> <a
+                            href="#" data-id="14" class="city-item city-milli">Воронеж</a> <a
+                            href="#" data-id="15" class="city-item city-milli">Волгоград</a>
+                        <p>А</p>
+                        <a href="#" data-id="105" class="city-item city-simple">Абакан</a> <a
+                            href="#" data-id="116" class="city-item city-simple">Альметьевск</a> <a
+                            href="#" data-id="88" class="city-item city-simple">Ангарск</a> <a
+                            href="#" data-id="164" class="city-item city-simple">Арзамас</a> <a
+                            href="#" data-id="101" class="city-item city-simple">Армавир</a>
+                        <a href="#" data-id="54" class="city-item city-simple">Архангельск</a> <a
+                            href="#" data-id="33" class="city-item city-simple">Астрахань</a> <a
+                            href="#" data-id="161" class="city-item city-simple">Ачинск</a>
+                        <p>Б</p>
+                        <a href="#" data-id="99" class="city-item city-simple">Балаково</a> <a
+                            href="#" data-id="45" class="city-item city-simple">Балашиха</a> <a
+                            href="#" data-id="21" class="city-item city-simple">Барнаул</a> <a
+                            href="#" data-id="139" class="city-item city-simple">Батайск</a> <a
+                            href="#" data-id="51" class="city-item city-simple">Белгород</a> <a
+                            href="#" data-id="119" class="city-item city-simple">Березники</a> <a
+                            href="#" data-id="95" class="city-item city-simple">Бийск</a> <a
+                            href="#" data-id="89" class="city-item city-simple">Благовещенск</a> <a
+                            href="#" data-id="85" class="city-item city-simple">Братск</a> <a
+                            href="#" data-id="49" class="city-item city-simple">Брянск</a>
+                    </div>
+                    <div class="city_column">
+                        <p>В</p>
+                        <a href="#" data-id="92" class="city-item city-simple">Великий Новгород</a> <a
+                            href="#" data-id="26" class="city-item city-simple">Владивосток</a> <a
+                            href="#" data-id="66" class="city-item city-simple">Владикавказ</a> <a
+                            href="#" data-id="53" class="city-item city-simple">Владимир</a> <a
+                            href="#" data-id="15" class="city-item city-simple">Волгоград</a> <a
+                            href="#" data-id="108" class="city-item city-simple">Волгодонск</a> <a
+                            href="#" data-id="60" class="city-item city-simple">Волжский</a> <a
+                            href="#" data-id="64" class="city-item city-simple">Вологда</a> <a
+                            href="#" data-id="14" class="city-item city-simple">Воронеж</a>
+                        <p>Г</p>
+                        <a href="#" data-id="71" class="city-item city-simple">Грозный</a>
+                        <p>Д</p>
+                        <a href="#" data-id="137" class="city-item city-simple">Дербент</a> <a
+                            href="#" data-id="86" class="city-item city-simple">Дзержинск</a> <a
+                            href="#" data-id="143" class="city-item city-simple">Димитровград</a> <a
+                            href="#" data-id="142" class="city-item city-simple">Домодедово</a>
+                        <p>Е</p>
+                        <a href="#" data-id="158" class="city-item city-simple">Евпатория</a> <a
+                            href="#" data-id="160" class="city-item city-simple">Елец</a> <a
+                            href="#" data-id="159" class="city-item city-simple">Ессентуки</a>
+                        <p>Ж</p>
+                         <a
+                            href="#" data-id="154" class="city-item city-simple">Жуковский</a>
+                        <p>З</p>
+                        <a href="#" data-id="111" class="city-item city-simple">Златоуст</a>
+                        <p>И</p>
+                        <a href="#" data-id="48" class="city-item city-simple">Иваново</a> <a
+                            href="#" data-id="20" class="city-item city-simple">Ижевск</a> <a
+                            href="#" data-id="22" class="city-item city-simple">Иркутск</a>
+                        <p>Й</p>
+                        <a href="#" data-id="77" class="city-item city-simple">Йошкар-Ола</a>
+                    </div>
+                    <div class="city_column">
+                        <p>К</p>
+                        <a href="#" data-id="6" class="city-item city-simple">Казань</a> <a
+                            href="#" data-id="40" class="city-item city-simple">Калининград</a> <a
+                            href="#" data-id="57" class="city-item city-simple">Калуга</a> <a
+                            href="#" data-id="147" class="city-item city-simple">Камышин</a> <a
+                            href="#" data-id="150" class="city-item city-simple">Каспийск</a> <a
+                            href="#" data-id="30" class="city-item city-simple">Кемерово</a> <a
+                            href="#" data-id="118" class="city-item city-simple">Керчь</a> <a
+                            href="#" data-id="37" class="city-item city-simple">Киров</a> <a
+                            href="#" data-id="129" class="city-item city-simple">Кисловодск</a> <a
+                            href="#" data-id="127" class="city-item city-simple">Ковров</a> <a
+                            href="#" data-id="125" class="city-item city-simple">Коломна</a>
+                        <a href="#" data-id="121" class="city-item city-simple">Копейск</a> <a
+                            href="#" data-id="93" class="city-item city-simple">Королёв&nbsp;</a> <a
+                            href="#" data-id="74" class="city-item city-simple">Кострома</a> <a
+                            href="#" data-id="123" class="city-item city-simple">Красногорск</a> <a
+                            href="#" data-id="16" class="city-item city-simple">Краснодар</a> <a
+                            href="#" data-id="12" class="city-item city-simple">Красноярск</a> <a
+                            href="#" data-id="61" class="city-item city-simple">Курган</a> <a
+                            href="#" data-id="41" class="city-item city-simple">Курск</a> <a
+                            href="#" data-id="144" class="city-item city-simple">Кызыл</a>
+                        <p>Л</p>
+                        <a href="#" data-id="36" class="city-item city-simple">Липецк</a> <a
+                            href="#" data-id="102" class="city-item city-simple">Люберцы</a>
+                        <p>М</p>
+                        <a href="#" data-id="47" class="city-item city-simple">Магнитогорск</a> <a
+                            href="#" data-id="124" class="city-item city-simple">Майкоп</a> <a
+                            href="#" data-id="27" class="city-item city-simple">Махачкала</a> <a
+                            href="#" data-id="117" class="city-item city-simple">Миасс</a> <a
+                            href="#" data-id="68" class="city-item city-simple">Мурманск</a> <a
+                            href="#" data-id="151" class="city-item city-simple">Муром</a> <a
+                            href="#" data-id="96" class="city-item city-simple">Мытищи</a>
+                    </div>
+                    <div class="city_column">
+                        <p>Н</p>
+                        <a href="#" data-id="34" class="city-item city-simple">Набережные Челны</a> <a
+                            href="#" data-id="146" class="city-item city-simple">Назрань</a> <a
+                            href="#" data-id="82" class="city-item city-simple">Нальчик</a> <a
+                            href="#" data-id="115" class="city-item city-simple">Находка</a> <a
+                            href="#" data-id="141" class="city-item city-simple">Невинномысск</a> <a
+                            href="#" data-id="132" class="city-item city-simple">Нефтекамск</a> <a
+                            href="#" data-id="134" class="city-item city-simple">Нефтеюганск</a> <a
+                            href="#" data-id="75" class="city-item city-simple">Нижневартовск</a> <a
+                            href="#" data-id="84" class="city-item city-simple">Нижнекамск</a> <a
+                            href="#" data-id="5" class="city-item city-simple">Нижний Новгород</a> <a
+                            href="#" data-id="31" class="city-item city-simple">Новокузнецк</a> <a
+                            href="#" data-id="166" class="city-item city-simple">Новокуйбышевск</a> <a
+                            href="#" data-id="131" class="city-item city-simple">Новомосковск</a> <a
+                            href="#" data-id="76" class="city-item city-simple">Новороссийск</a> <a
+                            href="#" data-id="133" class="city-item city-simple">Новочебоксарск</a> <a
+                            href="#" data-id="109" class="city-item city-simple">Новочеркасск</a> <a
+                            href="#" data-id="153" class="city-item city-simple">Новошахтинск</a> <a
+                            href="#" data-id="149" class="city-item city-simple">Новый Уренгой</a> <a
+                            href="#" data-id="168" class="city-item city-simple">Ногинск</a> <a
+                            href="#" data-id="106" class="city-item city-simple">Норильск</a> <a
+                            href="#" data-id="157" class="city-item city-simple">Ноябрьск</a>
+                        <p>О</p>
+                        <a href="#" data-id="148" class="city-item city-simple">Обнинск</a> <a
+                            href="#" data-id="126" class="city-item city-simple">Одинцово</a> <a
+                            href="#" data-id="145" class="city-item city-simple">Октябрьский</a> <a
+                            href="#" data-id="8" class="city-item city-simple">Омск</a> <a
+                            href="#" data-id="62" class="city-item city-simple">Орёл</a> <a
+                            href="#" data-id="29" class="city-item city-simple">Оренбург</a> <a
+                            href="#" data-id="140" class="city-item city-simple">Орехово-Зуево</a> <a
+                            href="#" data-id="87" class="city-item city-simple">Орск</a>
+                    </div>
+                    <div class="city_column">
+                        <p>П</p>
+                        <a href="#" data-id="35" class="city-item city-simple">Пенза</a> <a
+                            href="#" data-id="13" class="city-item city-simple">Пермь</a> <a
+                            href="#" data-id="73" class="city-item city-simple">Петрозаводск</a>
+                       
+                        <a href="#" data-id="69" class="city-item city-simple">Подольск</a> <a
+                            href="#" data-id="97" class="city-item city-simple">Прокопьевск</a> <a
+                            href="#" data-id="94" class="city-item city-simple">Псков</a> <a
+                            href="#" data-id="156" class="city-item city-simple">Пушкино</a> <a
+                            href="#" data-id="122" class="city-item city-simple">Пятигорск</a>
+                        <p>Р</p>
+                        <a href="#" data-id="152" class="city-item city-simple">Раменское</a> <a
+                            href="#" data-id="10" class="city-item city-simple">Ростов-на-Дону</a> <a
+                            href="#" data-id="120" class="city-item city-simple">Рубцовск</a> <a
+                            href="#" data-id="100" class="city-item city-simple">Рыбинск</a> <a
+                            href="#" data-id="32" class="city-item city-simple">Рязань</a>
+                        <p>С</p>
+                        <a href="#" data-id="114" class="city-item city-simple">Салават</a> <a
+                            href="#" data-id="9" class="city-item city-simple">Самара</a> <a
+                            href="#" data-id="2" class="city-item city-simple">Санкт-Петербург</a> <a
+                            href="#" data-id="65" class="city-item city-simple">Саранск</a> <a
+                            href="#" data-id="17" class="city-item city-simple">Саратов</a> <a
+                            href="#" data-id="44" class="city-item city-simple">Севастополь</a> <a
+                            href="#" data-id="103" class="city-item city-simple">Северодвинск</a> <a
+                            href="#" data-id="155" class="city-item city-simple">Северск</a> <a
+                            href="#" data-id="163" class="city-item city-simple">Сергиев Посад</a> <a
+                            href="#" data-id="130" class="city-item city-simple">Серпухов</a> <a
+                            href="#" data-id="58" class="city-item city-simple">Симферополь</a> <a
+                            href="#" data-id="59" class="city-item city-simple">Смоленск</a> <a
+                            href="#" data-id="50" class="city-item city-simple">Сочи</a> <a
+                            href="#" data-id="43" class="city-item city-simple">Ставрополь</a> <a
+                            href="#" data-id="91" class="city-item city-simple">Старый Оскол</a> <a
+                            href="#" data-id="72" class="city-item city-simple">Стерлитамак</a> <a
+                            href="#" data-id="55" class="city-item city-simple">Сургут</a> <a
+                            href="#" data-id="107" class="city-item city-simple">Сызрань</a> <a
+                            href="#" data-id="80" class="city-item city-simple">Сыктывкар</a>
+                    </div>
+                    <div class="city_column">
+                        <p>Т</p>
+                        <a href="#" data-id="79" class="city-item city-simple">Таганрог</a> <a
+                            href="#" data-id="70" class="city-item city-simple">Тамбов</a> <a
+                            href="#" data-id="46" class="city-item city-simple">Тверь</a> <a
+                            href="#" data-id="19" class="city-item city-simple">Тольятти</a> <a
+                            href="#" data-id="28" class="city-item city-simple">Томск</a> <a
+                            href="#" data-id="39" class="city-item city-simple">Тула</a> <a
+                            href="#" data-id="18" class="city-item city-simple">Тюмень</a>
+                        <p>У</p>
+                        <a href="#" data-id="42" class="city-item city-simple">Улан-Удэ</a> <a
+                            href="#" data-id="23" class="city-item city-simple">Ульяновск</a> <a
+                            href="#" data-id="112" class="city-item city-simple">Уссурийск</a> <a
+                            href="#" data-id="11" class="city-item city-simple">Уфа</a>
+                        <p>Х</p>
+                        <a href="#" data-id="24" class="city-item city-simple">Хабаровск</a> <a
+                            href="#" data-id="128" class="city-item city-simple">Хасавюрт</a> <a
+                            href="#" data-id="81" class="city-item city-simple">Химки</a>
+                        <p>Ч</p>
+                        <a href="#" data-id="38" class="city-item city-simple">Чебоксары</a> <a
+                            href="#" data-id="7" class="city-item city-simple">Челябинск</a> <a
+                            href="#" data-id="63" class="city-item city-simple">Череповец</a> <a
+                            href="#" data-id="138" class="city-item city-simple">Черкесск</a> <a
+                            href="#" data-id="56" class="city-item city-simple">Чита</a>
+                        <p>Ш</p>
+                        <a href="#" data-id="83" class="city-item city-simple">Шахты</a>
+                        <p>Щ</p>
+                        <a href="#" data-id="136" class="city-item city-simple">Щёлково</a>
+                        <p>Э</p>
+                        <a href="#" data-id="113" class="city-item city-simple">Электросталь</a> <a
+                            href="#" data-id="165" class="city-item city-simple">Элиста</a> <a
+                            href="#" data-id="90" class="city-item city-simple">Энгельс</a>
+                        <p>Ю</p>
+                        <a href="#" data-id="98" class="city-item city-simple">Южно-Сахалинск</a>
+                    </div>
+                    <div class="city_column">
+                        <p>Я</p>
+                        <a href="#" data-id="67" class="city-item city-simple">Якутск</a> <a
+                            href="#" data-id="25" class="city-item city-simple">Ярославль</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="business-popup" class="business-popup">
+          <h5>бизнес-план</h5>
+          <form class="business-form" action="ajax-programer.php" method="post">
+            <div class="form-field">
+              <input type="text" name="name" placeholder="имя" required />
+            </div>
+            <div class="form-field">
+              <select id="city_select" class="city-select" name="city">
+                <option>Москва</option>
+                <option>Новосибирск</option>
+                <option>Екатеринбург</option>
+                <option>Cанкт-Петербург</option>
+                <option>Нижний Новгород</option>
+                <option>Казань</option>
+                <option>Челябинск</option>
+                <option>Омск</option>
+                <option>Самара</option>
+                <option>Ростов-на-Дону</option>
+                <option>Уфа</option>
+                <option>Красноярск</option>
+                <option>Пермь</option>
+                <option>Воронеж</option>
+                <option>Волгогра</option>
+                <option>Абакан</option>
+                <option>Альметьевск</option>
+                <option>Ангарск</option>
+                <option>Арзамас</option>
+                <option>Армавир</option>
+                <option>Архангельск</option>
+                <option>Астрахань</option>
+                <option>Ачинск</option>
+                <option>Балаково</option>
+                <option>Балашиха</option>
+                <option>Барнаул</option>
+                <option>Батайск</option>
+                <option>Белгород</option>
+                <option>Березники</option>
+                <option>Бийск</option>
+                <option>Благовещенск</option>
+                <option>Братск</option>
+                <option>Брянск</option>
+                <option>Великий Новгород</option>
+                <option>Владивосток</option>
+                <option>Владикавказ</option>
+                <option>Владимир</option>
+                <option>Волгоград</option>
+                <option>Волгодонск</option>
+                <option>Волжский</option>
+                <option>Вологда</option>
+                <option>Воронеж</option>
+                <option>Грозный</option>
+                <option>Дербент</option>
+                <option>Дзержинск</option>
+                <option>Димитровград</option>
+                <option>Домодедово</option>
+                <option>Евпатория</option>
+                <option>Елец</option>
+                <option>Ессентуки</option>
+                <option>Жуковский</option>
+                <option>Златоуст</option>
+                <option>Иваново</option>
+                <option>Ижевск</option>
+                <option>Иркутск</option>
+                <option>Йошкар-Ола</option>
+                <option>Казань</option>
+                <option>Калининград</option>
+                <option>Калуга</option>
+                <option>Камышин</option>
+                <option>Каспийск</option>
+                <option>Кемерово</option>
+                <option>Керчь</option>
+                <option>Киров</option>
+                <option>Кисловодск</option>
+                <option>Ковров</option>
+                <option>Коломна</option>
+                <option>Копейск</option>
+                <option>Королёв</option>
+                <option>Кострома</option>
+                <option>Красногорск</option>
+                <option>Краснодар</option>
+                <option>Красноярск</option>
+                <option>Курган</option>
+                <option>Курск</option>
+                <option>Кызыл</option>
+                <option>Липецк</option>
+                <option>Люберцы</option>
+                <option>Магнитогорск</option>
+                <option>Майкоп</option>
+                <option>Махачкала</option>
+                <option>Миасс</option>
+                <option>Мурманск</option>
+                <option>Муром</option>
+                <option>Мытищи</option>
+                <option>Набережные Челны</option>
+                <option>Назрань</option>
+                <option>Нальчик</option>
+                <option>Находка</option>
+                <option>Невинномысск</option>
+                <option>Нефтекамск</option>
+                <option>Нефтеюганск</option>
+                <option>Нижневартовск</option>
+                <option>Нижнекамск</option>
+                <option>Нижний Новгород</option>
+                <option>Новокузнецк</option>
+                <option>Новокуйбышевск</option>
+                <option>Новомосковск</option>
+                <option>Новороссийск</option>
+                <option>Новочебоксарск</option>
+                <option>Новочеркасск</option>
+                <option>Новошахтинск</option>
+                <option>Новый Уренгой</option>
+                <option>Ногинск</option>
+                <option>Норильск</option>
+                <option>Ноябрьск</option>
+                <option>Обнинск</option>
+                <option>Одинцово</option>
+                <option>Октябрьский</option>
+                <option>Омск</option>
+                <option>Орёл</option>
+                <option>Оренбург</option>
+                <option>Орехово-Зуево</option>
+                <option>Орск</option>
+                <option>Пенза</option>
+                <option>Пермь</option>
+                <option>Петрозаводск</option>
+                <option>Подольск</option>
+                <option>Прокопьевск</option>
+                <option>Псков</option>
+                <option>Пушкино</option>
+                <option>Пятигорск</option>
+                <option>Раменское</option>
+                <option>Ростов-на-Дону</option>
+                <option>Рубцовск</option>
+                <option>Рыбинск</option>
+                <option>Рязань</option>
+                <option>Салават</option>
+                <option>Самара</option>
+                <option>Санкт-Петербург</option>
+                <option>Саранск</option>
+                <option>Саратов</option>
+                <option>Севастополь</option>
+                <option>Северодвинск</option>
+                <option>Северск</option>
+                <option>Сергиев Посад</option>
+                <option>Серпухов</option>
+                <option>Симферополь</option>
+                <option>Смоленск</option>
+                <option>Сочи</option>
+                <option>Ставрополь</option>
+                <option>Старый Оскол</option>
+                <option>Стерлитамак</option>
+                <option>Сургут</option>
+                <option>Сызрань</option>
+                <option>Сыктывкар</option>
+                <option>Таганрог</option>
+                <option>Тамбов</option>
+                <option>Тверь</option>
+                <option>Тольятти</option>
+                <option>Томск</option>
+                <option>Тула</option>
+                <option>Тюмень</option>
+                <option>Улан-Удэ</option>
+                <option>Ульяновск</option>
+                <option>Уссурийск</option>
+                <option>Уфа</option>
+                <option>Хабаровск</option>
+                <option>Хасавюрт</option>
+                <option>Химки</option>
+                <option>Чебоксары</option>
+                <option>Челябинск</option>
+                <option>Череповец</option>
+                <option>Черкесск</option>
+                <option>Чита</option>
+                <option>Шахты</option>
+                <option>Щёлково</option>
+                <option>Электросталь</option>
+                <option>Элиста</option>
+                <option>Энгельс</option>
+                <option>Южно-Сахалинск</option>
+                <option>Якутск</option>
+                <option>Ярославль</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <input type="email" name="email" placeholder="email" required />
+            </div>
+            <div class="form-field">
+              <input type="tel" name="tel" placeholder="телефон" required />
+            </div>
+            <button class="el-button" type="submit">Скачать бизнес-план</button>
+          </form>
+        </div>
+    
+    
+        <div id="not-city-popup">
+          <p>Извините, но вашего города нет в списке</p>
+        </div>
+    
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer_placeholder"></div>
+    <footer id="footer" class="footer">
+    
+        <div class="mbox">
+            <div class="footer-wrap">
+    
+                <div class="footer-logo">
+                    <img src="/images/footer-logo.png" alt="" />
+                </div>
+    
+                <div class="footer-text">
+                    <p>ИП Коньяков С.Д.</p>
+                    <p>ИНН 540110257752 ОГРНИП 315547600053812</p>
+                    <p>Р/сч: 40802810600010000088 в ПАО БАНК «ФК ОТКРЫТИЕ» БИК 045004839</p>
+                    <p>Корр. счет: 30101810550040000839</p>
+                </div>
+    
+                <div class="footer-pay-img">
+                    <img src="/images/pay-services.jpg" alt="" />
+                </div>
+    
+            </div>
+        </div>
+    
+    </footer>
+    <!-- FOOTER -->
+    
+    <!-- SCRIPTS -->
+    
+    <script>
+        URL = 'townPopulation.json';
+        var MainTown = '';
+        var MainPopulation = '';
+        var investToStart = 0;
+        var city = '';
+    </script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/validate_script.js" ></script>
+    
+    <!-- build:js -->
+    
+    <script type="text/javascript" src="js/plagins/device.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.easy-autocomplete.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.fancybox.pack.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.formstyler.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/jquery.validate.min.js" ></script>
+    <script type="text/javascript" src="js/plagins/maskInput.js" ></script>
+    <script type="text/javascript" src="js/plagins/slick.js" ></script>
+    
+    <script type="text/javascript" src="js/basic_scripts.js" ></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/develop/develop_1.js" ></script>
+    <script type="text/javascript" src="js/develop/develop_4.js" ></script>
+    <!-- endbuild -->
+    
+    <!-- /SCRIPTS -->
+
+</div>
+</body>
+</html>

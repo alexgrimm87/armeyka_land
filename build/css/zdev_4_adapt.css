@@ -1,0 +1,14 @@
+@media screen and (max-width: 1366px) {
+  .select-town-pop {
+    width: 100%;
+    max-width: 1280px; }
+    .select-town-pop .city_column_all .city_column {
+      width: -webkit-calc(100% / 4);
+      width: -moz-calc(100% / 4);
+      width: calc(100% / 4); } }
+
+@media screen and (max-width: 1025px) {
+  .select-town-pop .city_column_all .city_column {
+    width: -webkit-calc(100% / 3);
+    width: -moz-calc(100% / 3);
+    width: calc(100% / 3); } }
